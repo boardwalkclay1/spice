@@ -19,8 +19,11 @@
     <section id="detailView" class="hidden"></section>
   </main>
 
-  <script src="/js/spices.js"></script>
-  <script src="/data.sauces.js"></script>
-  <script src="/js/app.js"></script>
+  <!-- MASTER MODULES MUST BE MODULE SCRIPTS -->
+  <script type="module" src="/js/spices.js"></script>
+  <script type="module" src="/js/sauces.js"></script>
+
+  <!-- APP MUST ALSO BE A MODULE SO IT CAN IMPORT -->
+  <script type="module" src="/js/app.js"></script>
 </body>
 </html>
