@@ -1,7 +1,11 @@
-// Merge all items
+// IMPORT DATA MODULES
+import SPICES from "/js/spices.js";
+import SAUCES from "/js/sauces.js";
+
+// MERGE ALL ITEMS
 const ALL_ITEMS = [...SPICES, ...SAUCES];
 
-// Category config (for nav)
+// CATEGORY CONFIG
 const CATEGORIES = [
   { key: "Dry Spices", label: "🌶 Dry Spices" },
   { key: "Herb Blends", label: "🌿 Herb Blends" },
@@ -11,6 +15,7 @@ const CATEGORIES = [
   { key: "Fermented Sauces", label: "🧪 Fermented Sauces" }
 ];
 
+// DOM ELEMENTS
 const categoryNav = document.getElementById("categoryNav");
 const listView = document.getElementById("listView");
 const detailView = document.getElementById("detailView");
@@ -19,13 +24,14 @@ const searchInput = document.getElementById("searchInput");
 let currentCategory = null;
 let currentSearch = "";
 
-// Init
+// INIT
 renderCategoryNav();
 renderList();
 
 // ---------- NAV ----------
 function renderCategoryNav() {
   categoryNav.innerHTML = "";
+
   const allBtn = document.createElement("button");
   allBtn.textContent = "⭐ All";
   allBtn.onclick = () => {
@@ -82,7 +88,6 @@ function renderList() {
     })
     .join("");
 
-  // Attach click handlers
   document.querySelectorAll(".card").forEach(card => {
     card.addEventListener("click", () => {
       const id = card.getAttribute("data-id");
