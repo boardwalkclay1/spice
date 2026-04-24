@@ -1,101 +1,302 @@
-const DRY_SPICES = [
+// Dry Spices — Batch 1 (items 1–10)
+
+const DRY_SPICES_BATCH_1 = [
   {
-    id: "cumin_powder",
+    id: "dry-001",
     name: "Cumin Powder",
     emoji: "🌰",
     category: "Dry Spices",
-    type: "spice",
-    image: "images/spices/cumin_powder.jpg",
-    description: "Warm, earthy spice made from roasted cumin seeds.",
     origin: "Middle East / India",
-    flavor_profile: "Earthy, nutty, slightly bitter",
+    description: "A warm, earthy spice made from ground cumin seeds.",
+    flavor_profile: "Earthy, warm, slightly bitter",
     heat_level: "None",
-    equipment: ["Skillet", "Grinder", "Jar"],
-    ingredients: ["Whole cumin seeds"],
+    image: "",
+    equipment: ["Spice grinder"],
+    ingredients: ["Cumin seeds"],
     steps: [
-      "🔥 Dry roast cumin seeds.",
-      "❄️ Cool completely.",
-      "🧂 Grind to powder.",
-      "📦 Store airtight."
+      "Toast cumin seeds lightly in a dry pan.",
+      "Cool completely.",
+      "Grind into a fine powder."
     ],
     variations: [
-      { name: "Toasted", description: "Darker roast = smoky flavor." }
+      { name: "Smoked Cumin", description: "Smoke seeds before grinding." }
     ],
-    best_on: ["Tacos", "Curries", "Rice", "Veggies"],
+    best_on: ["Curries", "Chili", "Tacos"],
     mix_with: ["Coriander", "Paprika", "Garlic powder"],
-    used_in_blends: ["Taco seasoning", "Curry powder"],
-    storage: { container: "Jar", shelf_life: "6 months" }
+    used_in_blends: ["Garam masala", "Taco seasoning"],
+    storage: {
+      container: "Airtight jar",
+      shelf_life: "6–8 months",
+      notes: "Keep away from heat and sunlight."
+    }
   },
 
   {
-    id: "coriander_powder",
+    id: "dry-002",
     name: "Coriander Powder",
     emoji: "🌿",
     category: "Dry Spices",
-    type: "spice",
-    image: "images/spices/coriander_powder.jpg",
-    description: "Citrusy, floral spice from ground coriander seeds.",
     origin: "Mediterranean",
-    flavor_profile: "Citrus, floral, warm",
+    description: "A citrusy, floral spice made from ground coriander seeds.",
+    flavor_profile: "Citrusy, warm, floral",
     heat_level: "None",
-    equipment: ["Grinder"],
+    image: "",
+    equipment: ["Spice grinder"],
     ingredients: ["Coriander seeds"],
     steps: [
-      "🔥 Lightly toast seeds.",
-      "❄️ Cool.",
-      "🧂 Grind fine."
+      "Toast seeds until fragrant.",
+      "Cool fully.",
+      "Grind to powder."
     ],
-    variations: [],
-    best_on: ["Curries", "Soups", "Rice"],
-    mix_with: ["Cumin", "Turmeric"],
-    used_in_blends: ["Curry powder", "Garam masala"],
-    storage: { container: "Jar", shelf_life: "6 months" }
-  },
-
-  {
-    id: "paprika",
-    name: "Paprika",
-    emoji: "🫑",
-    category: "Dry Spices",
-    type: "spice",
-    image: "images/spices/paprika.jpg",
-    description: "Ground dried red peppers with sweet, smoky, or hot variations.",
-    origin: "Hungary / Spain",
-    flavor_profile: "Sweet, smoky, mild heat",
-    heat_level: "Low",
-    equipment: ["Grinder"],
-    ingredients: ["Dried red peppers"],
-    steps: ["🧂 Grind peppers.", "📦 Store airtight."],
     variations: [
-      { name: "Smoked", description: "Smoked over oak." },
-      { name: "Hot", description: "Spicier peppers." }
+      { name: "Coarse Grind", description: "Leave slightly chunky for texture." }
     ],
-    best_on: ["BBQ rubs", "Stews", "Eggs"],
-    mix_with: ["Garlic powder", "Cumin"],
-    used_in_blends: ["BBQ rub", "Taco seasoning"],
-    storage: { container: "Jar", shelf_life: "1 year" }
+    best_on: ["Curries", "Soups", "Vegetables"],
+    mix_with: ["Cumin", "Turmeric"],
+    used_in_blends: ["Curry powder", "Berbere"],
+    storage: {
+      container: "Glass jar",
+      shelf_life: "6 months",
+      notes: "Loses aroma quickly once ground."
+    }
   },
 
   {
-    id: "turmeric",
+    id: "dry-003",
+    name: "Paprika",
+    emoji: "🌶️",
+    category: "Dry Spices",
+    origin: "Hungary / Spain",
+    description: "A vibrant red spice made from dried ground peppers.",
+    flavor_profile: "Sweet, smoky, mild heat",
+    heat_level: "Mild",
+    image: "",
+    equipment: ["Grinder (optional)"],
+    ingredients: ["Dried red peppers"],
+    steps: [
+      "Dry peppers completely.",
+      "Remove stems and seeds.",
+      "Grind into powder."
+    ],
+    variations: [
+      { name: "Smoked Paprika", description: "Use smoked peppers for deeper flavor." }
+    ],
+    best_on: ["Chicken", "Potatoes", "Stews"],
+    mix_with: ["Garlic powder", "Onion powder"],
+    used_in_blends: ["BBQ rubs", "Chili powder"],
+    storage: {
+      container: "Airtight tin",
+      shelf_life: "6–9 months",
+      notes: "Color fades with light exposure."
+    }
+  },
+
+  {
+    id: "dry-004",
     name: "Turmeric Powder",
     emoji: "🟡",
     category: "Dry Spices",
-    type: "spice",
-    image: "images/spices/turmeric.jpg",
-    description: "Bright yellow spice with earthy, bitter notes.",
     origin: "India",
-    flavor_profile: "Earthy, bitter, warm",
+    description: "A golden spice known for its earthy flavor and color.",
+    flavor_profile: "Earthy, slightly bitter",
     heat_level: "None",
+    image: "",
     equipment: ["Grinder"],
     ingredients: ["Dried turmeric root"],
-    steps: ["🧂 Grind dried root.", "📦 Store airtight."],
-    variations: [],
+    steps: [
+      "Slice turmeric root.",
+      "Dry thoroughly.",
+      "Grind into fine powder."
+    ],
+    variations: [
+      { name: "Wild Turmeric", description: "More aromatic, less bitter." }
+    ],
     best_on: ["Curries", "Rice", "Soups"],
     mix_with: ["Cumin", "Coriander"],
-    used_in_blends: ["Curry powder"],
-    storage: { container: "Jar", shelf_life: "1 year" }
+    used_in_blends: ["Curry powder", "Golden milk mix"],
+    storage: {
+      container: "Glass jar",
+      shelf_life: "12 months",
+      notes: "Stains surfaces easily."
+    }
+  },
+
+  {
+    id: "dry-005",
+    name: "Black Pepper Powder",
+    emoji: "⚫",
+    category: "Dry Spices",
+    origin: "India",
+    description: "A sharp, pungent spice made from ground black peppercorns.",
+    flavor_profile: "Sharp, spicy, woody",
+    heat_level: "Medium",
+    image: "",
+    equipment: ["Pepper mill", "Grinder"],
+    ingredients: ["Black peppercorns"],
+    steps: [
+      "Dry peppercorns if needed.",
+      "Grind to desired fineness."
+    ],
+    variations: [
+      { name: "Coarse Grind", description: "Ideal for rubs and crusts." }
+    ],
+    best_on: ["Steak", "Eggs", "Vegetables"],
+    mix_with: ["Salt", "Garlic powder"],
+    used_in_blends: ["Steak seasoning", "Italian seasoning"],
+    storage: {
+      container: "Pepper mill or jar",
+      shelf_life: "12 months",
+      notes: "Whole peppercorns last longer."
+    }
+  },
+
+  {
+    id: "dry-006",
+    name: "White Pepper Powder",
+    emoji: "⚪",
+    category: "Dry Spices",
+    origin: "China",
+    description: "A milder pepper made from peeled peppercorns.",
+    flavor_profile: "Sharp, earthy, less pungent",
+    heat_level: "Medium",
+    image: "",
+    equipment: ["Grinder"],
+    ingredients: ["White peppercorns"],
+    steps: [
+      "Dry peppercorns.",
+      "Grind finely."
+    ],
+    variations: [
+      { name: "Extra Fine Powder", description: "Used in soups for smooth texture." }
+    ],
+    best_on: ["Soups", "Seafood", "Cream sauces"],
+    mix_with: ["Ginger powder", "Garlic powder"],
+    used_in_blends: ["Chinese five spice"],
+    storage: {
+      container: "Airtight jar",
+      shelf_life: "8 months",
+      notes: "More delicate flavor than black pepper."
+    }
+  },
+
+  {
+    id: "dry-007",
+    name: "Ginger Powder",
+    emoji: "🫚",
+    category: "Dry Spices",
+    origin: "Asia",
+    description: "A warm, aromatic spice made from dried ginger root.",
+    flavor_profile: "Warm, spicy, slightly sweet",
+    heat_level: "Mild",
+    image: "",
+    equipment: ["Grinder"],
+    ingredients: ["Dried ginger root"],
+    steps: [
+      "Slice ginger thinly.",
+      "Dry completely.",
+      "Grind into powder."
+    ],
+    variations: [
+      { name: "Extra Fine Ginger", description: "Sift after grinding." }
+    ],
+    best_on: ["Cookies", "Curries", "Tea"],
+    mix_with: ["Cinnamon", "Cloves"],
+    used_in_blends: ["Pumpkin spice", "Masala chai"],
+    storage: {
+      container: "Glass jar",
+      shelf_life: "12 months",
+      notes: "Keep dry to prevent clumping."
+    }
+  },
+
+  {
+    id: "dry-008",
+    name: "Garlic Powder",
+    emoji: "🧄",
+    category: "Dry Spices",
+    origin: "Global",
+    description: "A savory, aromatic powder made from dried garlic.",
+    flavor_profile: "Savory, pungent, slightly sweet",
+    heat_level: "None",
+    image: "",
+    equipment: ["Dehydrator", "Grinder"],
+    ingredients: ["Garlic cloves"],
+    steps: [
+      "Slice garlic thin.",
+      "Dehydrate fully.",
+      "Grind into powder."
+    ],
+    variations: [
+      { name: "Garlic Granules", description: "Coarser grind for texture." }
+    ],
+    best_on: ["Meat rubs", "Pasta", "Vegetables"],
+    mix_with: ["Onion powder", "Paprika"],
+    used_in_blends: ["BBQ rubs", "Taco seasoning"],
+    storage: {
+      container: "Airtight jar",
+      shelf_life: "10–12 months",
+      notes: "Avoid moisture exposure."
+    }
+  },
+
+  {
+    id: "dry-009",
+    name: "Onion Powder",
+    emoji: "🧅",
+    category: "Dry Spices",
+    origin: "Global",
+    description: "A sweet, savory powder made from dried onions.",
+    flavor_profile: "Sweet, savory, aromatic",
+    heat_level: "None",
+    image: "",
+    equipment: ["Dehydrator", "Grinder"],
+    ingredients: ["Onions"],
+    steps: [
+      "Slice onions thin.",
+      "Dehydrate until crisp.",
+      "Grind into powder."
+    ],
+    variations: [
+      { name: "Onion Flakes", description: "Leave coarse for texture." }
+    ],
+    best_on: ["Soups", "Stews", "Seasoning blends"],
+    mix_with: ["Garlic powder", "Paprika"],
+    used_in_blends: ["Ranch seasoning", "BBQ rubs"],
+    storage: {
+      container: "Glass jar",
+      shelf_life: "12 months",
+      notes: "Keep sealed to prevent clumping."
+    }
+  },
+
+  {
+    id: "dry-010",
+    name: "Sumac",
+    emoji: "🟥",
+    category: "Dry Spices",
+    origin: "Middle East",
+    description: "A tangy, lemony spice made from dried sumac berries.",
+    flavor_profile: "Tangy, citrusy, slightly tart",
+    heat_level: "None",
+    image: "",
+    equipment: ["Grinder"],
+    ingredients: ["Dried sumac berries"],
+    steps: [
+      "Dry berries fully.",
+      "Grind into coarse powder."
+    ],
+    variations: [
+      { name: "Fine Sumac", description: "Sift for a smoother texture." }
+    ],
+    best_on: ["Salads", "Chicken", "Hummus"],
+    mix_with: ["Za'atar", "Cumin"],
+    used_in_blends: ["Za'atar"],
+    storage: {
+      container: "Airtight jar",
+      shelf_life: "12 months",
+      notes: "Color fades with light exposure."
+    }
   }
 ];
 
-export default DRY_SPICES;
+export default DRY_SPICES_BATCH_1;
