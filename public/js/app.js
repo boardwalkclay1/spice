@@ -5,9 +5,16 @@ export default function initApp(SPICES, SAUCES) {
     { key: "Dry Spices", label: "🌶 Dry Spices" },
     { key: "Herb Blends", label: "🌿 Herb Blends" },
     { key: "Seasoning Mixes", label: "🧂 Seasoning Mixes" },
+    { key: "Cultural Spices", label: "🌍 Cultural Spices" },
+    { key: "Hot Spices", label: "🔥 Hot Spices" },
+    { key: "Aromatics", label: "🧄 Aromatics" },
+    { key: "Seed Spices", label: "🌱 Seed Spices" },
+
     { key: "Fresh Sauces", label: "🍃 Fresh Sauces" },
     { key: "Cooked Sauces", label: "🍯 Cooked Sauces" },
-    { key: "Fermented Sauces", label: "🧪 Fermented Sauces" }
+    { key: "Fermented Sauces", label: "🧪 Fermented Sauces" },
+    { key: "Hot Sauces", label: "🌶 Hot Sauces" },
+    { key: "Marinades", label: "🥣 Marinades" }
   ];
 
   const categoryNav = document.getElementById("categoryNav");
