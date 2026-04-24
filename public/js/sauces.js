@@ -1,28 +1,31 @@
-// MASTER SAUCES MODULE
-// Imports all 10 sauce category modules and exports one unified array
+// MASTER SAUCES MODULE — matches EXACT files in /sauces folder
 
-import FRESH_SAUCES from "/js/sauces/freshSauces.js";
 import COOKED_SAUCES from "/js/sauces/cookedSauces.js";
 import FERMENTED_SAUCES from "/js/sauces/fermentedSauces.js";
+
+import FRESH_SAUCES_1 from "/js/sauces/freshSauces.js";
+import FRESH_SAUCES_2 from "/js/sauces/freshSauces2.js";
+import FRESH_SAUCES_3 from "/js/sauces/freshSauce3.js";
+import FRESH_SAUCES_4 from "/js/sauces/freshSauce4.js";
+import FRESH_SAUCES_5 from "/js/sauces/freshSauces5.js";
+
 import HOT_SAUCES from "/js/sauces/hotSauces.js";
-import DRESSINGS from "/js/sauces/dressings.js";
-import MARINADES from "/js/sauces/marinades.js";
-import DIPS from "/js/sauces/dips.js";
-import GRAVIES from "/js/sauces/gravies.js";
-import CREAM_SAUCES from "/js/sauces/creamSauces.js";
-import CULTURAL_SAUCES from "/js/sauces/culturalSauces.js";
+
+import MARINADES from "/js/sauces/sauceMarinades.js";
 
 const SAUCES = [
-  ...FRESH_SAUCES,
   ...COOKED_SAUCES,
   ...FERMENTED_SAUCES,
+
+  ...FRESH_SAUCES_1,
+  ...FRESH_SAUCES_2,
+  ...FRESH_SAUCES_3,
+  ...FRESH_SAUCES_4,
+  ...FRESH_SAUCES_5,
+
   ...HOT_SAUCES,
-  ...DRESSINGS,
-  ...MARINADES,
-  ...DIPS,
-  ...GRAVIES,
-  ...CREAM_SAUCES,
-  ...CULTURAL_SAUCES
+
+  ...MARINADES
 ];
 
 export default SAUCES;
