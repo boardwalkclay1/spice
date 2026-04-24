@@ -8,24 +8,34 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/styles/style.css" />
 
-  <!-- Manifest -->
+  <!-- App Manifest -->
   <link rel="manifest" href="/manifest.json" />
+
+  <!-- Favicon (optional but recommended) -->
+  <link rel="icon" href="/icons/icon-192.png" type="image/png" />
 </head>
 
 <body>
-  <header>
+  <header class="app-header">
     <h1>🌶 Spice & Sauce Lab</h1>
-    <input id="searchInput" placeholder="Search spices & sauces..." />
+
+    <input
+      id="searchInput"
+      type="text"
+      placeholder="Search spices & sauces..."
+      autocomplete="off"
+      aria-label="Search spices and sauces"
+    />
   </header>
 
-  <nav id="categoryNav"></nav>
+  <nav id="categoryNav" class="category-nav"></nav>
 
-  <main>
-    <section id="listView"></section>
-    <section id="detailView" class="hidden"></section>
+  <main class="app-main">
+    <section id="listView" class="list-view"></section>
+    <section id="detailView" class="detail-view hidden"></section>
   </main>
 
-  <!-- SINGLE ENTRYPOINT -->
+  <!-- Main Entrypoint -->
   <script type="module" src="/js/index.js"></script>
 </body>
 </html>
