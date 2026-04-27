@@ -11,7 +11,7 @@ import HOT_SPICES from "/js/spices/hotSpices.js";
 
 // You have an Aromatics folder, not a file named aromatics.js
 // So the correct import is:
-import AROMATICS from "/js/spices/Aromatics/Aromatics.js";
+import AROMATICS from "/js/spices/Aromatics.js";
 
 // These files DO NOT exist in your repo:
 // barkSpices.js
