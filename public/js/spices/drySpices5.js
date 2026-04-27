@@ -196,3 +196,105 @@ const DRY_SPICES_BATCH_5 = [
     steps: [
       "Slice beets thin.",
       "Dry fully.",
+      "Grind into powder.",
+      "Sift for a smoother texture if desired."
+    ],
+    variations: [
+      { name: "Smoked Beetroot Powder", description: "Smoke beets before drying for deeper flavor." }
+    ],
+    best_on: ["Smoothies", "Pasta dough", "Seasoning blends"],
+    mix_with: ["Garlic powder", "Onion powder"],
+    used_in_blends: ["Vegetable seasoning mixes"],
+    storage: {
+      container: "Airtight jar",
+      shelf_life: "12 months",
+      notes: "Keep dry to maintain color vibrancy."
+    }
+  },
+
+  {
+    id: "dry-048",
+    name: "Dried Carrot Powder",
+    emoji: "🥕",
+    category: "Dry Spices",
+    origin: "Global",
+    description: "A sweet, earthy powder made from dehydrated carrots.",
+    flavor_profile: "Sweet, earthy, mild",
+    heat_level: "None",
+    image: "",
+    equipment: ["Dehydrator", "Grinder"],
+    ingredients: ["Carrots"],
+    steps: [
+      "Slice carrots thin.",
+      "Dry fully.",
+      "Grind into powder."
+    ],
+    variations: [],
+    best_on: ["Soups", "Stews", "Seasoning blends"],
+    mix_with: ["Onion powder", "Garlic powder"],
+    used_in_blends: ["Vegetable seasoning mixes"],
+    storage: {
+      container: "Airtight jar",
+      shelf_life: "12 months",
+      notes: "Keep dry to prevent clumping."
+    }
+  },
+
+  {
+    id: "dry-049",
+    name: "Dried Bell Pepper Powder",
+    emoji: "🫑",
+    category: "Dry Spices",
+    origin: "Global",
+    description: "A sweet, smoky powder made from dried bell peppers.",
+    flavor_profile: "Sweet, smoky, mild",
+    heat_level: "None",
+    image: "",
+    equipment: ["Dehydrator", "Grinder"],
+    ingredients: ["Bell peppers"],
+    steps: [
+      "Slice peppers.",
+      "Dry fully.",
+      "Grind into powder."
+    ],
+    variations: [],
+    best_on: ["Pasta", "Soups", "Seasoning blends"],
+    mix_with: ["Paprika", "Garlic powder"],
+    used_in_blends: ["Vegetable seasoning mixes"],
+    storage: {
+      container: "Airtight jar",
+      shelf_life: "12 months",
+      notes: "Keep dry to maintain flavor."
+    }
+  },
+
+  {
+    id: "dry-050",
+    name: "Dried Lemon Peel Powder",
+    emoji: "🍋",
+    category: "Dry Spices",
+    origin: "Global",
+    description: "A bright, citrusy powder made from dried lemon peel.",
+    flavor_profile: "Citrusy, bright, tangy",
+    heat_level: "None",
+    image: "",
+    equipment: ["Dehydrator", "Grinder"],
+    ingredients: ["Lemon peel"],
+    steps: [
+      "Remove white pith.",
+      "Dry peel fully.",
+      "Grind into powder."
+    ],
+    variations: [],
+    best_on: ["Fish", "Vegetables", "Seasoning blends"],
+    mix_with: ["Garlic powder", "Black pepper"],
+    used_in_blends: ["Lemon pepper seasoning"],
+    storage: {
+      container: "Airtight jar",
+      shelf_life: "12 months",
+      notes: "Store away from light to preserve aroma."
+    }
+  }
+];
+
+export default DRY_SPICES_BATCH_5;
